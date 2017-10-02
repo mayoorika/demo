@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>M2C</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<script src="sample-registration-form-validation.js"></script>
+<style>
+h1 {
+margin-left: 70px;
+}
+form li {
+list-style: none;
+margin-bottom: 5px;
+}
+
+form ul li label{
+float: left;
+clear: left;
+width: 100px;
+text-align: right;
+margin-right: 10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+
+form ul li input, select, span {
+float: left;
+margin-bottom: 10px;
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+}
+
+[type="submit"] {
+clear: left;
+margin: 20px 0 0 230px;
+font-size:18px
+}
+body{
+
+  padding-left:25%;
+}
+p {
+margin-left: 70px;
+font-weight: bold;
+
+}
+</style>
+<style>
+div {
+    background-color: lightgrey;
+    width: 600px;
+    border: 15px solid black;
+    padding: 25px;
+    margin: 25px;
+    align:justify;
+    height: 500px;
+}
+</style>
+</head>
+<body>
+ <h1>M2C Registration Form</h1>
+
+
+
+
+
+
+    <div>  <form method="post" action="/addname">
+
+            <li><label for="userid"> National Identity Card id:</label></li>
+            <li><input type="text" name="userid" size="12" required /></li>
+            <li><label for="username">Name:</label></li>
+            <li><input type="text" name="username" size="50" required/></li>
+            <li><label for="address">Address:</label></li>
+            <li><input type="text" name="address" size="50" required /></li>
+            <li><label for="country">City:</label></li>
+            <li><select name="country">
+            <option selected="" value="Default" required>(Please select a city)</option>
+            <option value="jaffna"> Jaffna </option>
+            <option value="Kilinochchi"> Kilinochchi </option>
+            <option value="Mannar"> Mannar </option>
+            <option value="Mullaitivu"> Mullaitivu </option>
+            <option value="Vavuniya"> Vavuniya </option>
+            <option value="Puttalam"> Puttalam </option>
+            <option value="Kurunegala"> Kurunegala </option>
+            <option value="Gampaha"> Gampaha </option>
+            <option value="Colombo"> Colombo </option>
+            <option value="Kalutara"> Kalutara </option>
+            <option value="Kalutara"> Anuradhapura </option>
+            <option value="Polonnaruwa"> Polonnaruwa </option>
+            <option value="Matale"> Matale </option>
+            <option value="Kandy "> Kandy </option>
+            <option value="Nuwara Eliya"> Nuwara Eliya </option>
+            <option value="Kegalle"> Kegalle </option>
+            <option value="Ratnapura"> Ratnapura </option>
+            <option value="Trincomalee"> Trincomalee </option>
+            <option value="Batticaloa"> Batticaloa </option>
+            <option value="Ampara"> Ampara </option>
+            <option value="Badulla"> Badulla </option>
+            <option value="Monaragala "> Monaragala </option>
+            <option value="Hambantota"> Hambantota </option>
+            <option value="Matara"> Matara </option>
+            <option value="Galle"> Galle </option>
+            </select></li><br><br><br>
+            <li><label for="zip"> Phone No:</label></li>
+            <li><input type="text" name="zip" required/></li>
+            <li><label for="email">Email:</label></li>
+            <li><input type="text" name="email" size="50" required /></li>
+            <li><label id="gender">Sex:</label></li>
+            <li><input type="radio" name="msex" value="Male"  /><span>Male</span></li>
+            <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+
+
+            <li><input type="submit" name="submit" value="Submit" /></li>
+
+
+        </form></div>
+    </body>
+</html>
